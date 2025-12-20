@@ -29,7 +29,7 @@ def perform_preprocessing(df):
     
     return df_clean
 
-def auto_preprocess_to_csv(filename='breastcancer_preprocessing.csv'):
+def auto_preprocess_to_csv(filename='preprocessing/namadataset_preprocessing/breastcancer_preprocessing.csv'):
     """
     Pipeline utama: Load -> Clean -> Save to CSV.
     Mengembalikan nama file yang disimpan.
@@ -59,4 +59,5 @@ def auto_preprocess_to_csv(filename='breastcancer_preprocessing.csv'):
     return filename
 
 if __name__ == "__main__":
+
     auto_preprocess_to_csv()
